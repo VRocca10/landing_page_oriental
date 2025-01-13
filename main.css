@@ -48,11 +48,15 @@ section {
 
 .header_body {
     padding: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #fff;
 
     header{
         display: flex;
         justify-content: space-between;
-        margin-top: 40px;
+        margin: 20px 0px;
 
         ul {
             display: flex;
@@ -123,6 +127,7 @@ section {
         display: flex;
         justify-content: center;
         padding-top: 40px;
+        padding-bottom: 60px;
     }
 
     h3 {
@@ -159,6 +164,8 @@ section {
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: #ff0000;
+        display: flex;
+        justify-content: center;
     }
 
     .quadrado {
@@ -166,6 +173,7 @@ section {
         height: 434px;
         background-color: #f8f5f2;
         border-radius: 16px;
+        
     }
 }
 
@@ -177,6 +185,7 @@ section {
         display: flex;
         justify-content: center;
         padding-top: 40px;
+        padding-bottom: 60px;
     }
 
     h3 {
