@@ -138,11 +138,17 @@ section {
         text-align: center;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        position: absolute;
+        top: 209px;
+        left: 66px;
     }
 
     img {
         display: flex;
         justify-self: center;
+        position: absolute;
+        top: -100px;
+        left: 55px;
     }
 
     p {
@@ -153,6 +159,8 @@ section {
         text-align: center;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        position: absolute;
+        top: 280px;
     }
 
     span {
@@ -166,14 +174,17 @@ section {
         color: #ff0000;
         display: flex;
         justify-content: center;
+        position: absolute;
+        top: 380px;
+        left: 158px;
     }
 
     .quadrado {
-        width: 384px;
         height: 434px;
-        background-color: #f8f5f2;
+        background-color: #f8f5f2;        
         border-radius: 16px;
-        
+        position: relative;
+        top: 71px;
     }
 }
 
@@ -258,6 +269,9 @@ section {
 .footer_body {
     
     footer {
+        padding-top: 35px;
+        border-top: 1px solid #F8F5F2;
+
         ul {
             display: flex;
             li{
@@ -272,11 +286,6 @@ section {
     
         .footer_image_logo {
             padding: 0px;
-        }
-
-        .linha {
-            border: 1px solid #F8F5F2;
-            margin-bottom: 40px;
         }
     }
 }
