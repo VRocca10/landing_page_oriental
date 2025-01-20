@@ -52,6 +52,7 @@ section {
     width: 100%;
     top: 0;
     background: #fff;
+    z-index: 1;
 
     header{
         display: flex;
@@ -133,58 +134,38 @@ section {
     h3 {
         font-family: Koh Santepheap;
         font-size: 32px;
-        font-weight: 400;
         line-height: 40.63px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        position: absolute;
-        top: 209px;
-        left: 66px;
     }
 
     img {
         display: flex;
         justify-self: center;
-        position: absolute;
-        top: -100px;
-        left: 55px;
     }
 
     p {
         font-family: Poppins;
         font-size: 18px;
-        font-weight: 400;
-        line-height: 27px;
         text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        position: absolute;
-        top: 280px;
     }
 
     span {
         font-family: Koh Santepheap;
         font-size: 32px;
-        font-weight: 400;
         line-height: 40.63px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
         color: #ff0000;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 380px;
-        left: 158px;
     }
 
     .quadrado {
-        height: 434px;
+        height: 430px;
         background-color: #f8f5f2;        
         border-radius: 16px;
         position: relative;
-        top: 71px;
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 35px;
     }
 }
 
@@ -202,11 +183,7 @@ section {
     h3 {
         font-family: Koh Santepheap;
         font-size: 32px;
-        font-weight: 400;
         line-height: 38.4px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
 
     p {
@@ -223,6 +200,8 @@ section {
         height: 392px;
         background-color: #f8f5f2;
         border-radius: 16px;
+        display: flex;
+        justify-content: center;
     }
 
     .star_image {
@@ -235,31 +214,74 @@ section {
     }
 }
 
+/* Seção Pergunta frequentes */
+
+.faq {
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    button {
+        font-family: Koh Santepheap;
+        font-size: 30px;
+        line-height: 40.63px;
+    }
+
+    .accordion-body {
+        font-family: Poppins;
+        font-size: 18px;
+    }
+}
 
 /* Seção Informação */
 
 .information {
 
-    p {
+    h4 {
         font-family: Koh Santepheap;
         font-size: 20px;
-        font-weight: 400;
         line-height: 25.39px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-
+        margin-bottom: 1em;
     }
 
-    span {
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 35px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        display: block;
+    ul {
+        padding: 0;
+
+        li {
+            font-family: Poppins;
+            font-size: 18px;
+            line-height: 35px;
+            display: block;
+            color: #232323;
+        }
+    }
+    
+}
+
+/* seção contatos */
+
+.contact {
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    label {
+        font-family: Koh Santepheap;
+        font-size: 25px;
+        line-height: 38.4px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        background-color: #ff0000;
+        color: #fff;
     }
 }
 
@@ -290,4 +312,25 @@ section {
     }
 }
 
+
+/* Ponto flutuante */
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
 
