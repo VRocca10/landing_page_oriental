@@ -114,7 +114,6 @@ section {
     }
 
     img {
-        width: 592px;
         height: 500px;
         border-radius: 16px;
     }
@@ -233,6 +232,14 @@ section {
         font-family: Poppins;
         font-size: 18px;
     }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #F8F5F2;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
 }
 
 /* Seção Informação */
@@ -334,3 +341,54 @@ section {
     margin-top: 16px;
 }
 
+
+@media (max-width: 768px) {
+    .contact {
+        .row{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .description {
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    .description_item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        display: flex;
+        text-align: center;
+    }
+
+    .text {
+        display: flex;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .information {
+        .col-md-3.custom-col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    .footer_body {
+        .footer_image_social {
+            justify-self: center;
+            padding: 0;
+        }
+
+        .footer_image_logo {
+            justify-content: center;
+        }
+    }
+}
