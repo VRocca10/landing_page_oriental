@@ -421,11 +421,16 @@ section {
             ul {
                 gap: 0;
             }
-
+            
             button {
                 display: flex;
                 align-self: anchor-center;
             }
+
+            img {
+                display: flex;
+                align-self: flex-start;
+            } 
         }
     }
 
