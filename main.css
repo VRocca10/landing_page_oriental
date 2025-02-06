@@ -155,13 +155,26 @@ section {
         background-color: #f8f5f2;        
         border-radius: 16px;
         position: relative;
-        margin-top: 130px;
+        margin-top: 165px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: end;
         gap: 35px;
         padding: 20px;
+        width: 500px;
+    }
+
+    .scroll-container {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory; /* Garante que o scroll "prenda" nas imagens */
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .row {
+        flex-wrap: nowrap;
     }
 }
 
@@ -205,8 +218,8 @@ section {
         justify-content: space-around;
     }
 
-    .star_image{
-        width: 70%;
+    .splide__arrow {
+        top: 70%;
     }
 }
 
