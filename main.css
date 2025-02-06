@@ -126,55 +126,45 @@ section {
         padding-bottom: 60px;
     }
 
-    h3 {
-        font-family: Koh Santepheap;
-        font-size: 32px;
-        line-height: 40.63px;
-    }
-
-    img {
+    .scroll-col {
         display: flex;
-        justify-self: center;
-    }
+        overflow-x: auto;
+        gap: 20px;
 
-    p {
-        font-family: Poppins;
-        font-size: 18px;
-        text-align: center;
-    }
-
-    span {
-        font-family: Koh Santepheap;
-        font-size: 32px;
-        line-height: 40.63px;
-        color: #ff0000;
-    }
-
-    .quadrado {
-        height: 430px;
-        background-color: #f8f5f2;        
-        border-radius: 16px;
-        position: relative;
-        margin-top: 165px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        gap: 35px;
-        padding: 20px;
-        width: 500px;
-    }
-
-    .scroll-container {
-        display: flex;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory; /* Garante que o scroll "prenda" nas imagens */
-        gap: 10px;
-        padding-bottom: 20px;
-    }
-
-    .row {
-        flex-wrap: nowrap;
+        .quadrado {
+            height: 430px;
+            background-color: #f8f5f2;        
+            border-radius: 16px;
+            position: relative;
+            margin-top: 165px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            gap: 35px;
+            padding: 20px;
+            min-width: 400px;
+            max-width: 400px;
+    
+            h3 {
+                font-family: Koh Santepheap;
+                font-size: 32px;
+                line-height: 40.63px;
+            }
+        
+            p {
+                font-family: Poppins;
+                font-size: 18px;
+                text-align: center;
+            }
+        
+            span {
+                font-family: Koh Santepheap;
+                font-size: 32px;
+                line-height: 40.63px;
+                color: #ff0000;
+            }
+        }
     }
 }
 
@@ -356,9 +346,26 @@ section {
 
 
 @media (max-width: 769px) {
+
     .header_body {
         a {
             margin-bottom: 10px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            ul {
+                gap: 0;
+            }
+            
+            img {
+                display: flex;
+                align-self: flex-start;
+            } 
         }
     }
 
@@ -411,39 +418,6 @@ section {
 
         .footer_image_logo {
             justify-content: center;
-        }
-    }
-
-    .popular {
-        .quadrado {
-            gap: 0;
-        }
-
-        h3 {
-            margin-top: 30px;
-        }
-    }
-
-    .header_body {
-        nav {
-            display: flex;
-            justify-content: center;
-        }
-
-        header {
-            ul {
-                gap: 0;
-            }
-            
-            button {
-                display: flex;
-                align-self: anchor-center;
-            }
-
-            img {
-                display: flex;
-                align-self: flex-start;
-            } 
         }
     }
 

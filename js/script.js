@@ -3,11 +3,11 @@ var splide = new Splide( '.splide', {
     perPage: 3,
 
     breakpoints: {
-		768: {
-			perPage: 2,
+        1024: {
+            perPage: 2,
         },
-        425: {
-            perPage:1,
+		768: {
+			perPage: 1,
         },
     },    
 } );
