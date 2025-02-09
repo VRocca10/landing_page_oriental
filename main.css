@@ -132,7 +132,7 @@ section {
         gap: 20px;
 
         .quadrado {
-            height: 430px;
+            height: 500px;
             background-color: #f8f5f2;        
             border-radius: 16px;
             position: relative;
@@ -143,8 +143,6 @@ section {
             justify-content: end;
             gap: 35px;
             padding: 20px;
-            min-width: 400px;
-            max-width: 400px;
     
             h3 {
                 font-family: Koh Santepheap;
@@ -354,12 +352,17 @@ section {
         
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: end;
         }
 
         header {
+            .navbar-toggler {
+                margin-right: 55px;
+            }
+
             ul {
                 gap: 0;
+                justify-self: end;
             }
             
             img {
@@ -391,6 +394,14 @@ section {
     .description_item {
         display: flex;
         justify-self: center;
+    }
+
+    .popular {
+        .scroll-col {
+            .quadrado {
+                min-width: 400px;
+            }
+        }
     }
 
     .title {
